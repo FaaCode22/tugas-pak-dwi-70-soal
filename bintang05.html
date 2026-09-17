@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>bintang05.html</title>
+</head>
+<body>
+<h3>Bintang 5 - Piramid terbalik</h3>
+<p>Formasi bintang 5</p>
+<script>
+// bintang05.html - Bintang 5 - Piramid terbalik
+for (var i = 6; i >= 1; i--) {
+  var bintang = 2 * i - 1;
+  var spasi = 6 - i;
+  for (var s = 0; s < spasi; s++) {
+    document.write("&nbsp;&nbsp;");
+  }
+  for (var b = 0; b < bintang; b++) {
+    document.write("*");
+  }
+  document.write("<br>");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>soal32.html</title>
+</head>
+<body>
+<h3>Soal 32 - Habis dibagi 6</h3>
+<p>Bilangan habis dibagi 6 dari n_awal sampai n_akhir</p>
+<script>
+// soal32.html - Soal 32 - Habis dibagi 6
+var awal = prompt("Masukkan n_awal : ");
+var akhir = prompt("Masukkan n_akhir : ");
+awal = parseInt(awal);
+akhir = parseInt(akhir);
+for (var i = awal; i <= akhir; i++) {
+  if (i % 6 == 0) {
+    document.write(i + " ");
+  }
+}
+</script>
+</body>
+</html>

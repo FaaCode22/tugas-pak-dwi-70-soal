@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>soal10.html</title>
+</head>
+<body>
+<h3>Soal 10 - Pola 654321555554321333211</h3>
+<p>Buat tampilan 654321555554321333211</p>
+<script>
+// soal10.html - Soal 10 - Pola 654321555554321333211
+var hasil = "";
+for (var i = 6; i >= 1; i--) {
+  if (i % 2 == 1) {
+    for (var j = 1; j <= i; j++) {
+      hasil = hasil + i;
+    }
+  } else {
+    for (var k = i; k >= 1; k--) {
+      hasil = hasil + k;
+    }
+  }
+}
+document.write(hasil);
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>soal12.html</title>
+</head>
+<body>
+<h3>Soal 12 - Pola sampai 9</h3>
+<p>Buat tampilan 122123123455555666666123456712345678999999999...</p>
+<script>
+// soal12.html - Soal 12 - Pola sampai 9
+var hasil = "";
+for (var i = 1; i <= 9; i++) {
+  // pola berpasangan : 1-2 diulang, 3-4 berurut, 5-6 diulang, dst
+  if (i == 1 || i == 2 || i == 5 || i == 6 || i == 9) {
+    for (var j = 1; j <= i; j++) {
+      hasil = hasil + i;
+    }
+  } else {
+    for (var k = 1; k <= i; k++) {
+      hasil = hasil + k;
+    }
+  }
+}
+document.write(hasil);
+</script>
+</body>
+</html>

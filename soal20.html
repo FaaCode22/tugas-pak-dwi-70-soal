@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>soal20.html</title>
+</head>
+<body>
+<h3>Soal 20 - Deret n+1 n+2 n+3</h3>
+<p>Buat tampilan 1 2 4 7 8 10 13 14 16 19 20 22 25</p>
+<script>
+// soal20.html - Soal 20 - Deret n+1 n+2 n+3
+var a = 1;
+var tambah = 1;
+document.write(a + " ");
+for (var i = 1; i <= 12; i++) {
+  a = a + tambah;
+  document.write(a + " ");
+  tambah = tambah + 1;
+  if (tambah > 3) {
+    tambah = 1;
+  }
+}
+</script>
+</body>
+</html>

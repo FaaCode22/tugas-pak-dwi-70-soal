@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>soal42.html</title>
+</head>
+<body>
+<h3>Soal 42 - Terbesar</h3>
+<p>Masukkan 10 angka, cari terbesar</p>
+<script>
+// soal42.html - Soal 42 - Terbesar
+var terbesar = 0;
+for (var i = 1; i <= 10; i++) {
+  var angka = prompt("Masukkan angka ke-" + i + " : ");
+  angka = parseInt(angka);
+  if (i == 1) {
+    terbesar = angka;
+  }
+  if (angka > terbesar) {
+    terbesar = angka;
+  }
+}
+document.write("Bilangan terbesar : " + terbesar);
+</script>
+</body>
+</html>

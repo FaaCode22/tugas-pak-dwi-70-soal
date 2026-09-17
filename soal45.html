@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>soal45.html</title>
+</head>
+<body>
+<h3>Soal 45 - Hitung Ganjil</h3>
+<p>Masukkan 10 angka, hitung yang ganjil</p>
+<script>
+// soal45.html - Soal 45 - Hitung Ganjil
+var jumlah = 0;
+for (var i = 1; i <= 10; i++) {
+  var angka = prompt("Masukkan angka ke-" + i + " : ");
+  angka = parseInt(angka);
+  if (angka % 2 == 1) {
+    jumlah = jumlah + 1;
+  }
+}
+document.write("Jumlah bilangan ganjil : " + jumlah);
+</script>
+</body>
+</html>

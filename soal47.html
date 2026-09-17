@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>soal47.html</title>
+</head>
+<body>
+<h3>Soal 47 - Total Genap</h3>
+<p>Total bilangan genap dari n_awal sampai n_akhir</p>
+<script>
+// soal47.html - Soal 47 - Total Genap
+var awal = prompt("Masukkan n_awal : ");
+var akhir = prompt("Masukkan n_akhir : ");
+awal = parseInt(awal);
+akhir = parseInt(akhir);
+var total = 0;
+for (var i = awal; i <= akhir; i++) {
+  if (i % 2 == 0) {
+    total = total + i;
+  }
+}
+document.write("Total genap : " + total);
+</script>
+</body>
+</html>

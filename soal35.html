@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>soal35.html</title>
+</head>
+<body>
+<h3>Soal 35 - Animasi 0 kiri-kanan-balik atas</h3>
+<p>Animasi 0 kiri atas ke kanan atas lalu balik ke kiri</p>
+<pre id="layar"></pre>
+<script>
+// soal35.html - Soal 35 - Animasi 0 kiri-kanan-balik atas
+var pos = 0;
+var lebar = 20;
+var maju = true;
+function jalan() {
+  var teks = "";
+  for (var i = 0; i <= lebar; i++) {
+    if (i == pos) {
+      teks = teks + "0";
+    } else {
+      teks = teks + " ";
+    }
+  }
+  document.getElementById("layar").innerHTML = teks;
+  if (maju == true) {
+    pos = pos + 1;
+    if (pos >= lebar) {
+      maju = false;
+    }
+  } else {
+    pos = pos - 1;
+    if (pos <= 0) {
+      maju = true;
+    }
+  }
+}
+setInterval(jalan, 200);
+</script>
+</body>
+</html>

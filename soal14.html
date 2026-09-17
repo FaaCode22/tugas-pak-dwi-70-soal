@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>soal14.html</title>
+</head>
+<body>
+<h3>Soal 14 - Pola mundur</h3>
+<p>Buat tampilan 888888887777777654321543214444333211</p>
+<script>
+// soal14.html - Soal 14 - Pola mundur
+var hasil = "";
+for (var i = 8; i >= 1; i--) {
+  if (i == 8 || i == 7 || i == 4 || i == 3) {
+    for (var j = 1; j <= i; j++) {
+      hasil = hasil + i;
+    }
+  } else {
+    for (var k = i; k >= 1; k--) {
+      hasil = hasil + k;
+    }
+  }
+}
+document.write(hasil);
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>soal36.html</title>
+</head>
+<body>
+<h3>Soal 36 - Animasi 0 kiri-kanan bawah (ulang)</h3>
+<p>Animasi 0 kiri bawah ke kanan bawah, ulang dari kiri</p>
+<pre id="layar"></pre>
+<script>
+// soal36.html - Soal 36 - Animasi 0 kiri-kanan bawah (ulang)
+var pos = 0;
+var lebar = 20;
+function jalan() {
+  var teks = "";
+  for (var b = 0; b < 9; b++) {
+    teks = teks + "\n";
+  }
+  for (var i = 0; i <= lebar; i++) {
+    if (i == pos) {
+      teks = teks + "0";
+    } else {
+      teks = teks + " ";
+    }
+  }
+  document.getElementById("layar").innerHTML = teks;
+  pos = pos + 1;
+  if (pos > lebar) {
+    pos = 0;
+  }
+}
+setInterval(jalan, 200);
+</script>
+</body>
+</html>

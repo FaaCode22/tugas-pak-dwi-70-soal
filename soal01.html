@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>soal01.html</title>
+</head>
+<body>
+<h3>Soal 1 - Kalimat Terbalik</h3>
+<p>Masukkan kalimat, tampilkan terbalik. Contoh Hallo jadi ollaH</p>
+<script>
+// soal01.html - Soal 1 - Kalimat Terbalik
+var kalimat = prompt("Masukkan kalimat : ");
+var hasil = "";
+// dibalik dari belakang
+for (var i = kalimat.length - 1; i >= 0; i--) {
+  hasil = hasil + kalimat[i];
+}
+document.write("Hasil dibalik : " + hasil);
+</script>
+</body>
+</html>

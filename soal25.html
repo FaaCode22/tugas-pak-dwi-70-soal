@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>soal25.html</title>
+</head>
+<body>
+<h3>Soal 25 - Kabisat akhir 2</h3>
+<p>Tahun kabisat dari n_awal sampai n_akhir yang angka terakhirnya 2</p>
+<script>
+// soal25.html - Soal 25 - Kabisat akhir 2
+var awal = prompt("Masukkan tahun awal : ");
+var akhir = prompt("Masukkan tahun akhir : ");
+awal = parseInt(awal);
+akhir = parseInt(akhir);
+for (var th = awal; th <= akhir; th++) {
+  if (th % 4 == 0 && th % 10 == 2) {
+    document.write(th + " ");
+  }
+}
+</script>
+</body>
+</html>

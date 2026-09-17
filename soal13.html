@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>soal13.html</title>
+</head>
+<body>
+<h3>Soal 13 - Pola sampai 9</h3>
+<p>Buat tampilan 112333444412345123456777777788888888123456789...</p>
+<script>
+// soal13.html - Soal 13 - Pola sampai 9
+var hasil = "";
+for (var i = 1; i <= 9; i++) {
+  // kebalikan soal 12 : 1-2 berurut, 3-4 diulang, dst
+  if (i == 1 || i == 2 || i == 5 || i == 6 || i == 9) {
+    for (var k = 1; k <= i; k++) {
+      hasil = hasil + k;
+    }
+  } else {
+    for (var j = 1; j <= i; j++) {
+      hasil = hasil + i;
+    }
+  }
+}
+document.write(hasil);
+</script>
+</body>
+</html>

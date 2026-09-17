@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>soal39.html</title>
+</head>
+<body>
+<h3>Soal 39 - Animasi 0 atas-bawah-balik kiri</h3>
+<p>Animasi 0 kiri atas ke kiri bawah lalu balik ke atas</p>
+<pre id="layar"></pre>
+<script>
+// soal39.html - Soal 39 - Animasi 0 atas-bawah-balik kiri
+var pos = 0;
+var tinggi = 10;
+var turun = true;
+function jalan() {
+  var teks = "";
+  for (var i = 0; i < tinggi; i++) {
+    if (i == pos) {
+      teks = teks + "0\n";
+    } else {
+      teks = teks + " \n";
+    }
+  }
+  document.getElementById("layar").innerHTML = teks;
+  if (turun == true) {
+    pos = pos + 1;
+    if (pos >= tinggi - 1) {
+      turun = false;
+    }
+  } else {
+    pos = pos - 1;
+    if (pos <= 0) {
+      turun = true;
+    }
+  }
+}
+setInterval(jalan, 300);
+</script>
+</body>
+</html>

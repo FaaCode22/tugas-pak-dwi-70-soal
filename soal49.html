@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>soal49.html</title>
+</head>
+<body>
+<h3>Soal 49 - Bilangan Prima</h3>
+<p>Tampilkan prima dari n_awal sampai n_akhir</p>
+<script>
+// soal49.html - Soal 49 - Bilangan Prima
+var awal = prompt("Masukkan n_awal : ");
+var akhir = prompt("Masukkan n_akhir : ");
+awal = parseInt(awal);
+akhir = parseInt(akhir);
+for (var i = awal; i <= akhir; i++) {
+  var prima = true;
+  if (i < 2) {
+    prima = false;
+  }
+  for (var j = 2; j < i; j++) {
+    if (i % j == 0) {
+      prima = false;
+    }
+  }
+  if (prima == true) {
+    document.write(i + " ");
+  }
+}
+</script>
+</body>
+</html>

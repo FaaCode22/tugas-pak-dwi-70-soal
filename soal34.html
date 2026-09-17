@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>soal34.html</title>
+</head>
+<body>
+<h3>Soal 34 - Animasi 0 kiri-kanan atas (ulang)</h3>
+<p>Animasi 0 dari kiri atas ke kanan atas, lalu ulang lagi dari kiri</p>
+<pre id="layar"></pre>
+<script>
+// soal34.html - Soal 34 - Animasi 0 kiri-kanan atas (ulang)
+var pos = 0;
+var lebar = 20;
+function jalan() {
+  var teks = "";
+  for (var i = 0; i <= lebar; i++) {
+    if (i == pos) {
+      teks = teks + "0";
+    } else {
+      teks = teks + " ";
+    }
+  }
+  document.getElementById("layar").innerHTML = teks;
+  pos = pos + 1;
+  if (pos > lebar) {
+    pos = 0;
+  }
+}
+setInterval(jalan, 200);
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>bintang06.html</title>
+</head>
+<body>
+<h3>Bintang 6 - Segitiga dobel</h3>
+<p>Formasi bintang 6</p>
+<script>
+// bintang06.html - Bintang 6 - Segitiga dobel
+for (var i = 1; i <= 3; i++) {
+  for (var s = 1; s <= 3 - i; s++) {
+    document.write("&nbsp;&nbsp;");
+  }
+  for (var j = 1; j <= i; j++) {
+    document.write("*");
+  }
+  document.write("<br>");
+}
+for (var a = 1; a <= 3; a++) {
+  for (var b = 1; b <= a; b++) {
+    document.write("*");
+  }
+  document.write("<br>");
+}
+</script>
+</body>
+</html>

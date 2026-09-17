@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>soal48.html</title>
+</head>
+<body>
+<h3>Soal 48 - Total Ganjil</h3>
+<p>Total bilangan ganjil dari n_awal sampai n_akhir</p>
+<script>
+// soal48.html - Soal 48 - Total Ganjil
+var awal = prompt("Masukkan n_awal : ");
+var akhir = prompt("Masukkan n_akhir : ");
+awal = parseInt(awal);
+akhir = parseInt(akhir);
+var total = 0;
+for (var i = awal; i <= akhir; i++) {
+  if (i % 2 == 1) {
+    total = total + i;
+  }
+}
+document.write("Total ganjil : " + total);
+</script>
+</body>
+</html>

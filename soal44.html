@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>soal44.html</title>
+</head>
+<body>
+<h3>Soal 44 - Hitung Genap</h3>
+<p>Masukkan 10 angka, hitung yang genap</p>
+<script>
+// soal44.html - Soal 44 - Hitung Genap
+var jumlah = 0;
+for (var i = 1; i <= 10; i++) {
+  var angka = prompt("Masukkan angka ke-" + i + " : ");
+  angka = parseInt(angka);
+  if (angka % 2 == 0) {
+    jumlah = jumlah + 1;
+  }
+}
+document.write("Jumlah bilangan genap : " + jumlah);
+</script>
+</body>
+</html>

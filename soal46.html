@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>soal46.html</title>
+</head>
+<body>
+<h3>Soal 46 - Total Positif</h3>
+<p>Total bilangan bulat positif dari n_awal sampai n_akhir</p>
+<script>
+// soal46.html - Soal 46 - Total Positif
+var awal = prompt("Masukkan n_awal : ");
+var akhir = prompt("Masukkan n_akhir : ");
+awal = parseInt(awal);
+akhir = parseInt(akhir);
+var total = 0;
+for (var i = awal; i <= akhir; i++) {
+  total = total + i;
+}
+document.write("Total : " + total);
+</script>
+</body>
+</html>

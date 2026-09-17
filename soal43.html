@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>soal43.html</title>
+</head>
+<body>
+<h3>Soal 43 - Terkecil</h3>
+<p>Masukkan 10 angka, cari terkecil</p>
+<script>
+// soal43.html - Soal 43 - Terkecil
+var terkecil = 0;
+for (var i = 1; i <= 10; i++) {
+  var angka = prompt("Masukkan angka ke-" + i + " : ");
+  angka = parseInt(angka);
+  if (i == 1) {
+    terkecil = angka;
+  }
+  if (angka < terkecil) {
+    terkecil = angka;
+  }
+}
+document.write("Bilangan terkecil : " + terkecil);
+</script>
+</body>
+</html>

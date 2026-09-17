@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>soal02.html</title>
+</head>
+<body>
+<h3>Soal 2 - Hitung Huruf</h3>
+<p>Masukkan kalimat, cari huruf dan hitung jumlahnya</p>
+<script>
+// soal02.html - Soal 2 - Hitung Huruf
+var kalimat = prompt("Masukkan kalimat : ");
+var huruf = prompt("Masukkan huruf yang dicari : ");
+var jumlah = 0;
+for (var i = 0; i < kalimat.length; i++) {
+  if (kalimat[i] == huruf) {
+    jumlah = jumlah + 1;
+  }
+}
+document.write("Huruf " + huruf + " ada " + jumlah + " buah");
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>soal22.html</title>
+</head>
+<body>
+<h3>Soal 22 - Faktorial</h3>
+<p>Tampilkan faktorial n! contoh 3! = 3 x 2 x 1 = 6</p>
+<script>
+// soal22.html - Soal 22 - Faktorial
+var n = prompt("Masukkan n : ");
+n = parseInt(n);
+var hasil = 1;
+var tulisan = "";
+for (var i = n; i >= 1; i--) {
+  hasil = hasil * i;
+  tulisan = tulisan + i;
+  if (i > 1) {
+    tulisan = tulisan + " x ";
+  }
+}
+document.write(n + "! = " + tulisan + " = " + hasil);
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>soal23.html</title>
+</head>
+<body>
+<h3>Soal 23 - Fibonacci</h3>
+<p>Tampilkan fibonacci 0,1,1,2,3,5,8,... sampai maksimum</p>
+<script>
+// soal23.html - Soal 23 - Fibonacci
+var maks = prompt("Masukkan nilai maksimum : ");
+maks = parseInt(maks);
+var a = 0;
+var b = 1;
+while (a <= maks) {
+  document.write(a + " ");
+  var c = a + b;
+  a = b;
+  b = c;
+}
+</script>
+</body>
+</html>

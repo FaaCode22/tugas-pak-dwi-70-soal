@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>soal38.html</title>
+</head>
+<body>
+<h3>Soal 38 - Animasi 0 atas-bawah kiri (ulang)</h3>
+<p>Animasi 0 kiri atas ke kiri bawah, ulang dari atas</p>
+<pre id="layar"></pre>
+<script>
+// soal38.html - Soal 38 - Animasi 0 atas-bawah kiri (ulang)
+var pos = 0;
+var tinggi = 10;
+function jalan() {
+  var teks = "";
+  for (var i = 0; i < tinggi; i++) {
+    if (i == pos) {
+      teks = teks + "0\n";
+    } else {
+      teks = teks + " \n";
+    }
+  }
+  document.getElementById("layar").innerHTML = teks;
+  pos = pos + 1;
+  if (pos >= tinggi) {
+    pos = 0;
+  }
+}
+setInterval(jalan, 300);
+</script>
+</body>
+</html>

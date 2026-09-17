@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>soal41.html</title>
+</head>
+<body>
+<h3>Soal 41 - Animasi 0 atas-bawah-balik kanan</h3>
+<p>Animasi 0 kanan atas ke kanan bawah lalu balik</p>
+<pre id="layar"></pre>
+<script>
+// soal41.html - Soal 41 - Animasi 0 atas-bawah-balik kanan
+var pos = 0;
+var tinggi = 10;
+var lebar = 20;
+var turun = true;
+function jalan() {
+  var teks = "";
+  for (var i = 0; i < tinggi; i++) {
+    var baris = "";
+    for (var s = 0; s < lebar; s++) {
+      baris = baris + " ";
+    }
+    if (i == pos) {
+      baris = baris + "0";
+    } else {
+      baris = baris + " ";
+    }
+    teks = teks + baris + "\n";
+  }
+  document.getElementById("layar").innerHTML = teks;
+  if (turun == true) {
+    pos = pos + 1;
+    if (pos >= tinggi - 1) {
+      turun = false;
+    }
+  } else {
+    pos = pos - 1;
+    if (pos <= 0) {
+      turun = true;
+    }
+  }
+}
+setInterval(jalan, 300);
+</script>
+</body>
+</html>

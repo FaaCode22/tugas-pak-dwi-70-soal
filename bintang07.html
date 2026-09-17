@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>bintang07.html</title>
+</head>
+<body>
+<h3>Bintang 7 - Panah</h3>
+<p>Formasi bintang 7</p>
+<script>
+// bintang07.html - Bintang 7 - Panah
+for (var i = 5; i >= 1; i--) {
+  var spasi = 11 - i;
+  for (var s = 0; s < spasi; s++) {
+    document.write("&nbsp;&nbsp;");
+  }
+  for (var b = 0; b < i; b++) {
+    document.write("*");
+  }
+  document.write("<br>");
+}
+for (var j = 2; j <= 5; j++) {
+  var sp2 = 11 - j;
+  for (var t = 0; t < sp2; t++) {
+    document.write("&nbsp;&nbsp;");
+  }
+  for (var c = 0; c < j; c++) {
+    document.write("*");
+  }
+  document.write("<br>");
+}
+</script>
+</body>
+</html>

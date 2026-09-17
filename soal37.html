@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>soal37.html</title>
+</head>
+<body>
+<h3>Soal 37 - Animasi 0 kiri-kanan-balik bawah</h3>
+<p>Animasi 0 kiri bawah ke kanan bawah lalu balik</p>
+<pre id="layar"></pre>
+<script>
+// soal37.html - Soal 37 - Animasi 0 kiri-kanan-balik bawah
+var pos = 0;
+var lebar = 20;
+var maju = true;
+function jalan() {
+  var teks = "";
+  for (var b = 0; b < 9; b++) {
+    teks = teks + "\n";
+  }
+  for (var i = 0; i <= lebar; i++) {
+    if (i == pos) {
+      teks = teks + "0";
+    } else {
+      teks = teks + " ";
+    }
+  }
+  document.getElementById("layar").innerHTML = teks;
+  if (maju == true) {
+    pos = pos + 1;
+    if (pos >= lebar) {
+      maju = false;
+    }
+  } else {
+    pos = pos - 1;
+    if (pos <= 0) {
+      maju = true;
+    }
+  }
+}
+setInterval(jalan, 200);
+</script>
+</body>
+</html>

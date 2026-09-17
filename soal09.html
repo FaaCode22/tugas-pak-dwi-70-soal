@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>soal09.html</title>
+</head>
+<body>
+<h3>Soal 9 - Pola 122123444412345666666</h3>
+<p>Buat tampilan 122123444412345666666 (ganjil berurut, genap diulang)</p>
+<script>
+// soal09.html - Soal 9 - Pola 122123444412345666666
+var hasil = "";
+for (var i = 1; i <= 6; i++) {
+  if (i % 2 == 1) {
+    for (var k = 1; k <= i; k++) {
+      hasil = hasil + k;
+    }
+  } else {
+    for (var j = 1; j <= i; j++) {
+      hasil = hasil + i;
+    }
+  }
+}
+document.write(hasil);
+</script>
+</body>
+</html>
